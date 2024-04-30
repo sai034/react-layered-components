@@ -71,13 +71,14 @@ function App() {
       <button onClick={handleButton1Click}>Button 1</button>
       <button onClick={handleButton2Click}>Button 2</button>
       <button onClick={handleButton3Click}> Button 3</button>
-    { isButton1Active && <Table studentsData = {studentsData} />}
-    { isButton2Active && <h1>No Data Found</h1> }
-    { isButton3Active &&
-      <StudentDataContext.Provider value={studentsData}>
-        <TableWithContext />
-      </StudentDataContext.Provider>
-    }
+      <hr/>
+      { isButton1Active && <Table studentsData = {studentsData} />}
+      { isButton2Active && <h1>No Data Found</h1> }
+      { isButton3Active &&
+        <StudentDataContext.Provider value={studentsData}>
+          <TableWithContext />
+        </StudentDataContext.Provider>
+      }
     </div>
   );
 }

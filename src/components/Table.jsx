@@ -14,7 +14,7 @@ function Table(props)
     ))
     return (
         <div>
-            <table>
+            <table class="center">
                 <tr>
                     <th>Name</th>
                     <th>Age</th>
